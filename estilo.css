@@ -1,0 +1,132 @@
+.{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+body{
+    margin: 0;
+    padding: 0;
+    background: #333;
+    font-family: sans-serif;
+    }
+
+.contacto-body{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+
+.center-body{
+    color: aquamarine;
+    }
+
+    .title{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+.video{
+    width: 50%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video::after{
+    content: "";
+    display: block;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+
+
+.mivideo-yt{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+h1{
+    font-size: 70px;
+    color:#fff;
+    text-align: center;
+    margin-top: 6%;
+    font-family: 'Montserrat', sans-serif;
+}
+header nav a {
+    text-decoration: 0;
+    font-size: 35px;
+    padding: 4px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header nav {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    }
+
+
+.container{ 
+  max: width 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 250px;
+  grid-gap: 20px;
+  padding: 100px 0;
+  }
+ 
+  .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  footer a {
+    text-decoration: 0;
+}
+.linea-h1{
+    margin-top: 1%;
+    color: rgb(174, 0, 255);
+}
+
+.legend-p{
+    color: aquamarine;
+}
+
+.texto-uno{
+    color: aqua;
+    text-decoration: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+
+@media(max-width:768px){
+    .container{
+        padding: 30px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .center-body{
+        color: aqua;
+    }
+ 
+}
+
+
+@media(max-width:576px){
+    .container{
+        padding: 30px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
